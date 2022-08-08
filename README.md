@@ -5,14 +5,54 @@
 
 Simple discord bot written in Python. Purpose of this project is to learn some bot-writing basics, so if you want to check some examples feel free! All of the documentation I used can be found in [discordpy docs](https://discordpy.readthedocs.io/en/stable/)
 
-Bot is written for single server handle only, so the database is a simple json file. If you want go worldwide with your bot prepare some proper database server!
+Bot is written for **single server handle only**, so the database is just a simple json file. If you want go worldwide with your bot prepare some proper database server!
 
 All bot commands are triggered by '>' sign before the command.
+
+**Bot is still in development, some options may not be working now!**
+
+## Features
+* check/help command
+
+## Upcoming features
+* events
+* welcoming logged in discord *VIPs*
+* random meme
 
 ## Commands
 ```
     >check
         prints if i'm alive and timestamp of the message
+    
+    >help
+        prints all the commands and configurations
+		
+	>events or >event
+		prints all of the saved events
+		
+	>eventadd [name] [date in format yyyy-MM-dd]
+		adds event to the database, for example '>eventadd Party 2022-11-28'
+		
+	>eventdel [name]
+		deletes event from the database, for example '>eventdel Party'
+		
+	>event [name]
+		prints data about event and count days till event
+		
+	>welcomes or >welcome
+		prints all users that will be welcomed on login to discord
+	
+	>welcomechange
+		switches on/off the welcome feature
+	
+	>welcomeadd [name]
+		adds user to be welcomed
+		
+	>welcomedel [name]
+		deletes user from welcome feature
+		
+	>meme
+		sends random SFW meme to the channel
 ```
 
 ## Used technology
