@@ -1,5 +1,5 @@
 # cheeseBot
-![It's a front pic!](https://github.com/alehee/cheeseBot/blob/main/cheeseBot/git_res/logo.png?raw=true)
+![It's a front pic!](https://github.com/alehee/cheeseBot/blob/main/git_res/logo.png?raw=true)
 
 Simple discord bot written in Python. Purpose of this project is to learn some bot-writing basics, so if you want to check some examples feel free! All of the documentation I used can be found in [discordpy docs](https://discordpy.readthedocs.io/en/stable/)
 
