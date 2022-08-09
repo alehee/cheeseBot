@@ -1,1 +1,2 @@
 py -3 -m pip install -U discord.py or python3 -m pip install -U discord.py
+py -3 -m pip install -U pyrandmeme or python3 -m pip install -U pyrandmeme

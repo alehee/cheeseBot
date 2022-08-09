@@ -13,6 +13,11 @@ async def on_ready():
 @cheese.client.event
 async def on_message(message):
     await cheese.processMessage(message)
+
+@cheese.client.event
+async def on_member_update(old_member, new_member):
+    if (str(old_member.status) == 'offline') and (str(new_member.status) == 'online' or str(new_member.status) == 'idle') and (new_member.nick in cheese.welcome_usernames):
+        await cheese.welcomeUser(new_member.nick)
 ### ==========
 
 cheese.client.run(cheese.token)

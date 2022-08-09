@@ -61,6 +61,7 @@ All bot commands are triggered by '>' sign before the command.
 ## Packages
 * discord.py
 * json
+* [pyrandmeme](https://pypi.org/project/pyrandmeme/)
 
 ## Download and installation
 You can download the master branch with code.
