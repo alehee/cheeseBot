@@ -62,7 +62,7 @@ All bot commands are triggered by '>' sign before the command.
 * random meme scraping by [this](https://sijey-praveen.medium.com/how-to-make-a-discord-meme-bot-using-15-lines-of-python-code-a2c7f6284d9f) tutorial
 
 ## Download and installation
-You can download the master branch with code.
+You can download the master branch with code or download latest version [here](https://drive.google.com/file/d/1GSu8a6LDqdzyvk3depJ01uPHyh3fkmj-/view?usp=sharing)
 
 If you're trying to run it on yourself you need to prepare your token and save it in directory as *token.json*
 ```json
