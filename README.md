@@ -19,11 +19,11 @@ All bot commands are triggered by '>' sign before the command.
 
 ## Commands
 ```
-    >check
-        prints if i'm alive and timestamp of the message
+    	>check
+        	prints if i'm alive and timestamp of the message
     
-    >help
-        prints all the commands and configurations
+    	>help
+        	prints all the commands and configurations
 		
 	>events or >event
 		prints all of the saved events
@@ -67,7 +67,7 @@ You can download the master branch with code.
 If you're trying to run it on yourself you need to prepare your token and save it in directory as *token.json*
 ```json
 {
-    "token": "your_token_here"
+	"token": "your_token_here"
 }
 ```
 
