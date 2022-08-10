@@ -13,8 +13,6 @@ All bot commands are triggered by '>' sign before the command.
 
 ## Features
 * check/help command
-
-## Upcoming features
 * events
 * welcoming logged in discord *VIPs*
 * random meme
@@ -61,7 +59,7 @@ All bot commands are triggered by '>' sign before the command.
 ## Packages
 * discord.py
 * json
-* [pyrandmeme](https://pypi.org/project/pyrandmeme/)
+* random meme scraping by [this](https://sijey-praveen.medium.com/how-to-make-a-discord-meme-bot-using-15-lines-of-python-code-a2c7f6284d9f) tutorial
 
 ## Download and installation
 You can download the master branch with code.
@@ -71,6 +69,11 @@ If you're trying to run it on yourself you need to prepare your token and save i
 {
     "token": "your_token_here"
 }
+```
+
+And also remember to change your main channel id where the 'welcoming messages' will arrive in *database.json*
+```json
+	"channel_id": 1234567890
 ```
 
 ## Thank you!

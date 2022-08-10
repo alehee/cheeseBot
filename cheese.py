@@ -3,8 +3,7 @@ import json
 import time
 import datetime
 import random
-
-from test import getDatabase
+from requests import get
 
 class Cheese:
     token = json.load(open('token.json'))['token']
@@ -161,7 +160,11 @@ class Cheese:
             await message.channel.send('I see. ' + name + ' is not a VIP. He will not be welcomed anymore :rage:')
 
         elif message.content == '>meme':
-            await message.channel.send('Working on it!')  
+            data = json.loads(get("https://meme-api.herokuapp.com/gimme").text)
+            while data['nsfw'] != False:
+                data = json.loads(get("https://meme-api.herokuapp.com/gimme").text)
+            meme = discord.Embed(title=f"{data['title']}", Color = discord.Color.random()).set_image(url=f"{data['url']}")
+            await message.channel.send(embed=meme)
 
     async def welcomeUser(self, username):
         str_index = random.randint(0, len(self.welcome_strs)-1)
