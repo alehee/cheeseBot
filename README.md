@@ -43,10 +43,10 @@ All bot commands are triggered by '>' sign before the command.
 	>welcomechange
 		switches on/off the welcome feature
 	
-	>welcomeadd [name]
+	>welcomeadd [name or nick]
 		adds user to be welcomed
 		
-	>welcomedel [name]
+	>welcomedel [name or nick]
 		deletes user from welcome feature
 		
 	>meme
@@ -75,6 +75,11 @@ And also remember to change your main channel id where the 'welcoming messages' 
 ```json
 	"channel_id": 1234567890
 ```
+
+## Changelog
+* 1.1.0.0 *in development*
+	* welcoming by nick or name on discord
+	* added 3 new welcome lines
 
 ## Thank you!
 Thank you for peeking at my project!

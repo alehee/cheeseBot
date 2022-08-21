@@ -39,10 +39,10 @@ class Cheese:
         >welcomechange
             switches on/off the welcome feature
         
-        >welcomeadd [name]
+        >welcomeadd [name or nick]
             adds user to be welcomed
             
-        >welcomedel [name]
+        >welcomedel [name or nick]
             deletes user from welcome feature
             
         >meme
@@ -52,7 +52,7 @@ class Cheese:
     def __init__(self):
         self.welcome_option = json.load(open('database.json'))['welcome_option']
         self.welcome_usernames = json.load(open('database.json'))['welcome']
-        self.welcome_strs = ["Howdy partner :cowboy:", "He's clearly up to something :unamused:", "Wanna some cheeeeese? :cheese: :cheese: :cheese:", "I don't believe it\nMust be a robot\nBeep boop :robot:"]
+        self.welcome_strs = ["Howdy partner :cowboy:", "He's clearly up to something :unamused:", "Wanna some cheeeeese? :cheese: :cheese: :cheese:", "I don't believe it\nMust be a robot\nBeep boop :robot:", "Hello there :disguised_face:", "Wanna play something? :point_right: :point_left:", "And there's some dinosaurs :sauropod: :t_rex:"]
         self.channel_id = json.load(open('database.json'))['channel_id']
 
     async def processMessage(self, message):
